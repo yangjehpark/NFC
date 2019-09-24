@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ManageItemCell" rowHeight="100" id="hUW-9E-KWH" customClass="ManageItemCell" customModule="NFC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hUW-9E-KWH" id="gfX-RZ-hGu">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyN-u3-22H">
+                        <rect key="frame" x="20" y="5" width="90" height="89.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTV-tv-jd3">
+                                <rect key="frame" x="0.0" y="16" width="90" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PTV-tv-jd3" secondAttribute="height" multiplier="1.618:1" id="jGT-U8-yPo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PTV-tv-jd3" firstAttribute="centerY" secondItem="IyN-u3-22H" secondAttribute="centerY" id="BZ7-7Y-Gxr"/>
+                            <constraint firstAttribute="width" constant="90" id="cui-dZ-vb2"/>
+                            <constraint firstItem="PTV-tv-jd3" firstAttribute="leading" secondItem="IyN-u3-22H" secondAttribute="leading" id="s5z-8t-0Ks"/>
+                            <constraint firstAttribute="trailing" secondItem="PTV-tv-jd3" secondAttribute="trailing" id="y93-TN-FmG"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvr-AM-5sH">
+                        <rect key="frame" x="105" y="49" width="260" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="h0Y-gn-i7X"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fq-1U-xJO">
+                        <rect key="frame" x="125" y="22.5" width="230" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGV-oz-rEe">
+                        <rect key="frame" x="125" y="55" width="230" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IyN-u3-22H" secondAttribute="bottom" constant="5" id="Egt-wJ-5BB"/>
+                    <constraint firstItem="DGV-oz-rEe" firstAttribute="top" secondItem="tvr-AM-5sH" secondAttribute="bottom" constant="5" id="Nwt-yw-UbQ"/>
+                    <constraint firstAttribute="trailing" secondItem="9Fq-1U-xJO" secondAttribute="trailing" constant="20" id="OR0-ax-xwj"/>
+                    <constraint firstItem="IyN-u3-22H" firstAttribute="leading" secondItem="gfX-RZ-hGu" secondAttribute="leading" constant="20" id="XBa-s9-Bjz"/>
+                    <constraint firstItem="tvr-AM-5sH" firstAttribute="top" secondItem="9Fq-1U-xJO" secondAttribute="bottom" id="Zj2-VG-Pj4"/>
+                    <constraint firstItem="9Fq-1U-xJO" firstAttribute="leading" secondItem="IyN-u3-22H" secondAttribute="trailing" constant="15" id="aDW-ud-B1k"/>
+                    <constraint firstItem="DGV-oz-rEe" firstAttribute="leading" secondItem="IyN-u3-22H" secondAttribute="trailing" constant="15" id="bnU-UQ-imo"/>
+                    <constraint firstAttribute="trailing" secondItem="DGV-oz-rEe" secondAttribute="trailing" constant="20" id="ff1-EV-tkf"/>
+                    <constraint firstItem="IyN-u3-22H" firstAttribute="top" secondItem="gfX-RZ-hGu" secondAttribute="top" constant="5" id="k2P-cF-TAF"/>
+                    <constraint firstAttribute="trailing" secondItem="tvr-AM-5sH" secondAttribute="trailing" constant="10" id="pY4-q4-stu"/>
+                    <constraint firstItem="tvr-AM-5sH" firstAttribute="centerY" secondItem="gfX-RZ-hGu" secondAttribute="centerY" id="rov-YW-Kbd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainTextLabel" destination="9Fq-1U-xJO" id="T1Y-st-DU9"/>
+                <outlet property="subTextLabel" destination="DGV-oz-rEe" id="68D-KQ-nH8"/>
+                <outlet property="thumnailCardView" destination="PTV-tv-jd3" id="eBP-Yl-8ZR"/>
+            </connections>
+            <point key="canvasLocation" x="-102.5" y="-83"/>
+        </tableViewCell>
+    </objects>
+</document>

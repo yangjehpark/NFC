@@ -1,0 +1,24 @@
+PODS:
+  - FLEX (2.4.0)
+  - SwiftGifOrigin (1.6.1)
+  - Toaster (2.1.1)
+
+DEPENDENCIES:
+  - FLEX (= 2.4.0)
+  - SwiftGifOrigin (= 1.6.1)
+  - Toaster (= 2.1.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FLEX
+    - SwiftGifOrigin
+    - Toaster
+
+SPEC CHECKSUMS:
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
+
+PODFILE CHECKSUM: 2801433adeb46e8fa3f58a04c68c1fdc11fd6756
+
+COCOAPODS: 1.5.0

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgd-UA-vjP">
+                                <rect key="frame" x="87" y="328" width="200" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ezu-XP-zil"/>
+                                    <constraint firstAttribute="height" constant="10" id="RrC-X6-4fl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iNFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBb-gc-z2S">
+                                <rect key="frame" x="124" y="348" width="128" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" name="color_main"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_nfc_circle" translatesAutoresizingMaskIntoConstraints="NO" id="8Ks-pw-FSC">
+                                <rect key="frame" x="87" y="108" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="i1W-09-1wT"/>
+                                    <constraint firstAttribute="width" constant="200" id="sWb-Ud-9iQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tBb-gc-z2S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="666-20-Oxf"/>
+                            <constraint firstItem="Hgd-UA-vjP" firstAttribute="top" secondItem="8Ks-pw-FSC" secondAttribute="bottom" constant="20" id="9Ba-JY-qxK"/>
+                            <constraint firstItem="Hgd-UA-vjP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="L2K-Pc-Lov"/>
+                            <constraint firstItem="Hgd-UA-vjP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OBq-Mb-tTL"/>
+                            <constraint firstItem="tBb-gc-z2S" firstAttribute="top" secondItem="Hgd-UA-vjP" secondAttribute="bottom" constant="10" id="qGi-Np-wOX"/>
+                            <constraint firstItem="8Ks-pw-FSC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tjU-5S-shh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_nfc_circle" width="383" height="383"/>
+        <namedColor name="color_main">
+            <color red="0.27799999713897705" green="0.6470000147819519" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
